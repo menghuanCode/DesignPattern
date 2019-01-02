@@ -1,0 +1,1664 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>设计模式介绍 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="principle.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    项目介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    设计模式介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="principle.html">
+            
+                <a href="principle.html">
+            
+                    
+                    设计模式六大原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="java/">
+            
+                <a href="java/">
+            
+                    
+                    java 源码实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="java/factory.html">
+            
+                <a href="java/factory.html">
+            
+                    
+                    工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="java/abstractFactory.html">
+            
+                <a href="java/abstractFactory.html">
+            
+                    
+                    抽象工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="java/singleton.html">
+            
+                <a href="java/singleton.html">
+            
+                    
+                    单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="java/Builder.html">
+            
+                <a href="java/Builder.html">
+            
+                    
+                    建造者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="java/Prototype.html">
+            
+                <a href="java/Prototype.html">
+            
+                    
+                    原型模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="java/AdaperPattern.html">
+            
+                <a href="java/AdaperPattern.html">
+            
+                    
+                    适配器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="java/Bridge.html">
+            
+                <a href="java/Bridge.html">
+            
+                    
+                    桥接模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="java/Filter.html">
+            
+                <a href="java/Filter.html">
+            
+                    
+                    过滤器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="java/Composite.html">
+            
+                <a href="java/Composite.html">
+            
+                    
+                    组合模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="java/Decorator.html">
+            
+                <a href="java/Decorator.html">
+            
+                    
+                    装饰器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="java/Facade.html">
+            
+                <a href="java/Facade.html">
+            
+                    
+                    外观模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="java/Flyweight.html">
+            
+                <a href="java/Flyweight.html">
+            
+                    
+                    享元模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="java/proxy.html">
+            
+                <a href="java/proxy.html">
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="java/ChainOfResponsibility.html">
+            
+                <a href="java/ChainOfResponsibility.html">
+            
+                    
+                    责任链模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="java/Command.html">
+            
+                <a href="java/Command.html">
+            
+                    
+                    命令模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.16" data-path="java/Interpreter.html">
+            
+                <a href="java/Interpreter.html">
+            
+                    
+                    解释器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.17" data-path="java/Iterator.html">
+            
+                <a href="java/Iterator.html">
+            
+                    
+                    迭代器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.18" data-path="java/Mediator.html">
+            
+                <a href="java/Mediator.html">
+            
+                    
+                    中介者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.19" data-path="java/Memento.html">
+            
+                <a href="java/Memento.html">
+            
+                    
+                    备忘录模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.20" data-path="java/ObServer.html">
+            
+                <a href="java/ObServer.html">
+            
+                    
+                    观察者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.21" data-path="java/State.html">
+            
+                <a href="java/State.html">
+            
+                    
+                    状态模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.22" data-path="java/NullObject.html">
+            
+                <a href="java/NullObject.html">
+            
+                    
+                    空对象模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.23" data-path="java/Strategy.html">
+            
+                <a href="java/Strategy.html">
+            
+                    
+                    策略模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.24" data-path="java/Template.html">
+            
+                <a href="java/Template.html">
+            
+                    
+                    模板模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.25" data-path="java/Visitor.html">
+            
+                <a href="java/Visitor.html">
+            
+                    
+                    访问者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.26" data-path="java/MVC.html">
+            
+                <a href="java/MVC.html">
+            
+                    
+                    MVC模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.27" data-path="java/BusinessDelegate.html">
+            
+                <a href="java/BusinessDelegate.html">
+            
+                    
+                    业务代表模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.28" data-path="java/CompositeEntity.html">
+            
+                <a href="java/CompositeEntity.html">
+            
+                    
+                    组合实体模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.29" data-path="java/DataAccessObject.html">
+            
+                <a href="java/DataAccessObject.html">
+            
+                    
+                    数据访问对象模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.30" data-path="java/FrontController.html">
+            
+                <a href="java/FrontController.html">
+            
+                    
+                    前端控制器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.31" data-path="java/InterceptingFilter.html">
+            
+                <a href="java/InterceptingFilter.html">
+            
+                    
+                    拦截过滤器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.32" data-path="java/ServiceLocator.html">
+            
+                <a href="java/ServiceLocator.html">
+            
+                    
+                    服务定位器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.33" data-path="java/TransferObject.html">
+            
+                <a href="java/TransferObject.html">
+            
+                    
+                    传输对象模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="javascript/">
+            
+                <a href="javascript/">
+            
+                    
+                    javascript 源码实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="javascript/factory.html">
+            
+                <a href="javascript/factory.html">
+            
+                    
+                    工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="javascript/abstractFactory.html">
+            
+                <a href="javascript/abstractFactory.html">
+            
+                    
+                    抽象工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="javascript/singleton.html">
+            
+                <a href="javascript/singleton.html">
+            
+                    
+                    单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="javascript/Builder.html">
+            
+                <a href="javascript/Builder.html">
+            
+                    
+                    建造者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="javascript/Prototype.html">
+            
+                <a href="javascript/Prototype.html">
+            
+                    
+                    原型模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="javascript/AdaperPattern.html">
+            
+                <a href="javascript/AdaperPattern.html">
+            
+                    
+                    适配器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="javascript/Bridge.html">
+            
+                <a href="javascript/Bridge.html">
+            
+                    
+                    桥接模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="javascript/Filter.html">
+            
+                <a href="javascript/Filter.html">
+            
+                    
+                    过滤器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="javascript/Composite.html">
+            
+                <a href="javascript/Composite.html">
+            
+                    
+                    组合模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="javascript/Decorator.html">
+            
+                <a href="javascript/Decorator.html">
+            
+                    
+                    装饰器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="javascript/Facade.html">
+            
+                <a href="javascript/Facade.html">
+            
+                    
+                    外观模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="javascript/Flyweight.html">
+            
+                <a href="javascript/Flyweight.html">
+            
+                    
+                    享元模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="javascript/proxy.html">
+            
+                <a href="javascript/proxy.html">
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="javascript/ChainOfResponsibility.html">
+            
+                <a href="javascript/ChainOfResponsibility.html">
+            
+                    
+                    责任链模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" data-path="javascript/Command.html">
+            
+                <a href="javascript/Command.html">
+            
+                    
+                    命令模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" data-path="javascript/Interpreter.html">
+            
+                <a href="javascript/Interpreter.html">
+            
+                    
+                    解释器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.17" data-path="javascript/Iterator.html">
+            
+                <a href="javascript/Iterator.html">
+            
+                    
+                    迭代器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.18" data-path="javascript/Mediator.html">
+            
+                <a href="javascript/Mediator.html">
+            
+                    
+                    中介者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.19" data-path="javascript/Memento.html">
+            
+                <a href="javascript/Memento.html">
+            
+                    
+                    备忘录模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20" data-path="javascript/ObServer.html">
+            
+                <a href="javascript/ObServer.html">
+            
+                    
+                    观察者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.21" data-path="javascript/State.html">
+            
+                <a href="javascript/State.html">
+            
+                    
+                    状态模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.22" data-path="javascript/NullObject.html">
+            
+                <a href="javascript/NullObject.html">
+            
+                    
+                    空对象模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.23" data-path="javascript/Strategy.html">
+            
+                <a href="javascript/Strategy.html">
+            
+                    
+                    策略模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.24" data-path="javascript/Template.html">
+            
+                <a href="javascript/Template.html">
+            
+                    
+                    模板模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.25" data-path="javascript/Visitor.html">
+            
+                <a href="javascript/Visitor.html">
+            
+                    
+                    访问者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.26" data-path="javascript/MVC.html">
+            
+                <a href="javascript/MVC.html">
+            
+                    
+                    MVC模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.27" data-path="javascript/BusinessDelegate.html">
+            
+                <a href="javascript/BusinessDelegate.html">
+            
+                    
+                    业务代表模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.28" data-path="javascript/CompositeEntity.html">
+            
+                <a href="javascript/CompositeEntity.html">
+            
+                    
+                    组合实体模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.29" data-path="javascript/DataAccessObject.html">
+            
+                <a href="javascript/DataAccessObject.html">
+            
+                    
+                    数据访问对象模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.30" data-path="javascript/FrontController.html">
+            
+                <a href="javascript/FrontController.html">
+            
+                    
+                    前端控制器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.31" data-path="javascript/InterceptingFilter.html">
+            
+                <a href="javascript/InterceptingFilter.html">
+            
+                    
+                    拦截过滤器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.32" data-path="javascript/ServiceLocator.html">
+            
+                <a href="javascript/ServiceLocator.html">
+            
+                    
+                    服务定位器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.33" data-path="javascript/TransferObject.html">
+            
+                <a href="javascript/TransferObject.html">
+            
+                    
+                    传输对象模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="php/">
+            
+                <a href="php/">
+            
+                    
+                    php 源码实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="php/factory.html">
+            
+                <a href="php/factory.html">
+            
+                    
+                    工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="php/abstractFactory.html">
+            
+                <a href="php/abstractFactory.html">
+            
+                    
+                    抽象工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="php/singleton.html">
+            
+                <a href="php/singleton.html">
+            
+                    
+                    单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="php/Builder.html">
+            
+                <a href="php/Builder.html">
+            
+                    
+                    建造者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="php/Prototype.html">
+            
+                <a href="php/Prototype.html">
+            
+                    
+                    原型模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="php/AdaperPattern.html">
+            
+                <a href="php/AdaperPattern.html">
+            
+                    
+                    适配器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="php/Bridge.html">
+            
+                <a href="php/Bridge.html">
+            
+                    
+                    桥接模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="php/Filter.html">
+            
+                <a href="php/Filter.html">
+            
+                    
+                    过滤器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="php/Composite.html">
+            
+                <a href="php/Composite.html">
+            
+                    
+                    组合模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="php/Decorator.html">
+            
+                <a href="php/Decorator.html">
+            
+                    
+                    装饰器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="php/Facade.html">
+            
+                <a href="php/Facade.html">
+            
+                    
+                    外观模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="php/Flyweight.html">
+            
+                <a href="php/Flyweight.html">
+            
+                    
+                    享元模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="php/proxy.html">
+            
+                <a href="php/proxy.html">
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="php/ChainOfResponsibility.html">
+            
+                <a href="php/ChainOfResponsibility.html">
+            
+                    
+                    责任链模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="php/Command.html">
+            
+                <a href="php/Command.html">
+            
+                    
+                    命令模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="php/Interpreter.html">
+            
+                <a href="php/Interpreter.html">
+            
+                    
+                    解释器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="php/Iterator.html">
+            
+                <a href="php/Iterator.html">
+            
+                    
+                    迭代器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="php/Mediator.html">
+            
+                <a href="php/Mediator.html">
+            
+                    
+                    中介者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="php/Memento.html">
+            
+                <a href="php/Memento.html">
+            
+                    
+                    备忘录模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="php/ObServer.html">
+            
+                <a href="php/ObServer.html">
+            
+                    
+                    观察者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="php/State.html">
+            
+                <a href="php/State.html">
+            
+                    
+                    状态模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="php/NullObject.html">
+            
+                <a href="php/NullObject.html">
+            
+                    
+                    空对象模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.23" data-path="php/Strategy.html">
+            
+                <a href="php/Strategy.html">
+            
+                    
+                    策略模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.24" data-path="php/Template.html">
+            
+                <a href="php/Template.html">
+            
+                    
+                    模板模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.25" data-path="php/Visitor.html">
+            
+                <a href="php/Visitor.html">
+            
+                    
+                    访问者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26" data-path="php/MVC.html">
+            
+                <a href="php/MVC.html">
+            
+                    
+                    MVC模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.27" data-path="php/BusinessDelegate.html">
+            
+                <a href="php/BusinessDelegate.html">
+            
+                    
+                    业务代表模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.28" data-path="php/CompositeEntity.html">
+            
+                <a href="php/CompositeEntity.html">
+            
+                    
+                    组合实体模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.29" data-path="php/DataAccessObject.html">
+            
+                <a href="php/DataAccessObject.html">
+            
+                    
+                    数据访问对象模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.30" data-path="php/FrontController.html">
+            
+                <a href="php/FrontController.html">
+            
+                    
+                    前端控制器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.31" data-path="php/InterceptingFilter.html">
+            
+                <a href="php/InterceptingFilter.html">
+            
+                    
+                    拦截过滤器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.32" data-path="php/ServiceLocator.html">
+            
+                <a href="php/ServiceLocator.html">
+            
+                    
+                    服务定位器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.33" data-path="php/TransferObject.html">
+            
+                <a href="php/TransferObject.html">
+            
+                    
+                    传输对象模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >设计模式介绍</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7B80;&#x4ECB;">&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7B80;&#x4ECB;</h1>
+<p>&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF08;Design pattern&#xFF09;&#x4EE3;&#x8868;&#x4E86;&#x6700;&#x4F73;&#x7684;&#x5B9E;&#x8DF5;&#xFF0C;&#x901A;&#x5E38;&#x88AB;&#x6709;&#x7ECF;&#x9A8C;&#x7684;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x6240;&#x91C7;&#x7528;&#x3002;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x662F;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x5728;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x9762;&#x4E34;&#x7684;&#x4E00;&#x822C;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;&#x8FD9;&#x4E9B;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x662F;&#x4F17;&#x591A;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x7ECF;&#x8FC7;&#x76F8;&#x5F53;&#x957F;&#x7684;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x7684;&#x8BD5;&#x9A8C;&#x548C;&#x9519;&#x8BEF;&#x603B;&#x7ED3;&#x51FA;&#x6765;&#x7684;&#x3002;</p>
+<p>&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x662F;&#x4E00;&#x5957;&#x88AB;&#x53CD;&#x590D;&#x4F7F;&#x7528;&#x7684;&#x3001;&#x591A;&#x6570;&#x4EBA;&#x77E5;&#x6653;&#x7684;&#x3001;&#x7ECF;&#x8FC7;&#x5206;&#x7C7B;&#x7F16;&#x76EE;&#x7684;&#x3001;&#x4EE3;&#x7801;&#x8BBE;&#x8BA1;&#x7ECF;&#x9A8C;&#x7684;&#x603B;&#x7ED3;&#x3002;&#x4F7F;&#x7528;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x662F;&#x4E3A;&#x4E86;&#x91CD;&#x7528;&#x4EE3;&#x7801;&#x3001;&#x8BA9;&#x4EE3;&#x7801;&#x66F4;&#x5BB9;&#x6613;&#x88AB;&#x4ED6;&#x4EBA;&#x7406;&#x89E3;&#x3001;&#x4FDD;&#x8BC1;&#x4EE3;&#x7801;&#x53EF;&#x9760;&#x6027;&#x3002; &#x6BEB;&#x65E0;&#x7591;&#x95EE;&#xFF0C;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x4E8E;&#x5DF1;&#x4E8E;&#x4ED6;&#x4EBA;&#x4E8E;&#x7CFB;&#x7EDF;&#x90FD;&#x662F;&#x591A;&#x8D62;&#x7684;&#xFF0C;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x4F7F;&#x4EE3;&#x7801;&#x7F16;&#x5236;&#x771F;&#x6B63;&#x5DE5;&#x7A0B;&#x5316;&#xFF0C;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x662F;&#x8F6F;&#x4EF6;&#x5DE5;&#x7A0B;&#x7684;&#x57FA;&#x77F3;&#xFF0C;&#x5982;&#x540C;&#x5927;&#x53A6;&#x7684;&#x4E00;&#x5757;&#x5757;&#x7816;&#x77F3;&#x4E00;&#x6837;&#x3002;&#x9879;&#x76EE;&#x4E2D;&#x5408;&#x7406;&#x5730;&#x8FD0;&#x7528;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x53EF;&#x4EE5;&#x5B8C;&#x7F8E;&#x5730;&#x89E3;&#x51B3;&#x5F88;&#x591A;&#x95EE;&#x9898;&#xFF0C;&#x6BCF;&#x79CD;&#x6A21;&#x5F0F;&#x5728;&#x73B0;&#x5B9E;&#x4E2D;&#x90FD;&#x6709;&#x76F8;&#x5E94;&#x7684;&#x539F;&#x7406;&#x6765;&#x4E0E;&#x4E4B;&#x5BF9;&#x5E94;&#xFF0C;&#x6BCF;&#x79CD;&#x6A21;&#x5F0F;&#x90FD;&#x63CF;&#x8FF0;&#x4E86;&#x4E00;&#x4E2A;&#x5728;&#x6211;&#x4EEC;&#x5468;&#x56F4;&#x4E0D;&#x65AD;&#x91CD;&#x590D;&#x53D1;&#x751F;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4EE5;&#x53CA;&#x8BE5;&#x95EE;&#x9898;&#x7684;&#x6838;&#x5FC3;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x80FD;&#x88AB;&#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#x7684;&#x539F;&#x56E0;&#x3002;</p>
+<h2 id="&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7684;&#x4F7F;&#x7528;">&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7684;&#x4F7F;&#x7528;</h2>
+<p>&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x5728;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x4E2D;&#x7684;&#x4E24;&#x4E2A;&#x4E3B;&#x8981;&#x7528;&#x9014;&#x3002;</p>
+<h3 id="&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x7684;&#x5171;&#x540C;&#x5E73;&#x53F0;">&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x7684;&#x5171;&#x540C;&#x5E73;&#x53F0;</h3>
+<p>&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x6807;&#x51C6;&#x7684;&#x672F;&#x8BED;&#x7CFB;&#x7EDF;&#xFF0C;&#x4E14;&#x5177;&#x4F53;&#x5230;&#x7279;&#x5B9A;&#x7684;&#x60C5;&#x666F;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5355;&#x4F8B;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x610F;&#x5473;&#x7740;&#x4F7F;&#x7528;&#x5355;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x6837;&#x6240;&#x6709;&#x719F;&#x6089;&#x5355;&#x4F8B;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7684;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x90FD;&#x80FD;&#x4F7F;&#x7528;&#x5355;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x544A;&#x8BC9;&#x5BF9;&#x65B9;&#xFF0C;&#x7A0B;&#x5E8F;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x5355;&#x4F8B;&#x6A21;&#x5F0F;&#x3002;</p>
+<h3 id="&#x6700;&#x4F73;&#x7684;&#x5B9E;&#x8DF5;">&#x6700;&#x4F73;&#x7684;&#x5B9E;&#x8DF5;</h3>
+<p>&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x5DF2;&#x7ECF;&#x7ECF;&#x5386;&#x4E86;&#x5F88;&#x957F;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x7684;&#x53D1;&#x5C55;&#xFF0C;&#x5B83;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x9762;&#x4E34;&#x7684;&#x4E00;&#x822C;&#x95EE;&#x9898;&#x7684;&#x6700;&#x4F73;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;&#x5B66;&#x4E60;&#x8FD9;&#x4E9B;&#x6A21;&#x5F0F;&#x6709;&#x52A9;&#x4E8E;&#x7ECF;&#x9A8C;&#x4E0D;&#x8DB3;&#x7684;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x901A;&#x8FC7;&#x4E00;&#x79CD;&#x7B80;&#x5355;&#x5FEB;&#x6377;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5B66;&#x4E60;&#x8F6F;&#x4EF6;&#x8BBE;&#x8BA1;&#x3002;</p>
+<h2 id="&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7684;&#x7C7B;&#x578B;">&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7684;&#x7C7B;&#x578B;</h2>
+<ol>
+<li>&#x521B;&#x5EFA;&#x578B;&#x6A21;&#x5F0F;&#xFF08;Creational Patterns&#xFF09;</li>
+<li>&#x7ED3;&#x6784;&#x578B;&#x6A21;&#x5F0F;&#xFF08;Structural Patterns&#xFF09;</li>
+<li>&#x884C;&#x4E3A;&#x578B;&#x6A21;&#x5F0F;&#xFF08;Behavioral Patterns&#xFF09;</li>
+<li>J2EE &#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x3002;</li>
+</ol>
+<h4 id="&#x521B;&#x5EFA;&#x578B;&#x6A21;&#x5F0F;">&#x521B;&#x5EFA;&#x578B;&#x6A21;&#x5F0F;</h4>
+<p>&#x8FD9;&#x4E9B;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x5728;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x540C;&#x65F6;&#x9690;&#x85CF;&#x521B;&#x5EFA;&#x903B;&#x8F91;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4F7F;&#x7528; new &#x8FD0;&#x7B97;&#x7B26;&#x76F4;&#x63A5;&#x5B9E;&#x4F8B;&#x5316;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x4F7F;&#x5F97;&#x7A0B;&#x5E8F;&#x5728;&#x5224;&#x65AD;&#x9488;&#x5BF9;&#x67D0;&#x4E2A;&#x7ED9;&#x5B9A;&#x5B9E;&#x4F8B;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x54EA;&#x4E9B;&#x5BF9;&#x8C61;&#x65F6;&#x66F4;&#x52A0;&#x7075;&#x6D3B;&#x3002;    </p>
+<ol>
+<li>&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#xFF08;Factory Pattern&#xFF09;</li>
+<li>&#x62BD;&#x8C61;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#xFF08;Abstract Factory Pattern&#xFF09;</li>
+<li>&#x5355;&#x4F8B;&#x6A21;&#x5F0F;&#xFF08;Singleton Pattern&#xFF09;</li>
+<li>&#x5EFA;&#x9020;&#x8005;&#x6A21;&#x5F0F;&#xFF08;Builder Pattern&#xFF09;</li>
+<li>&#x539F;&#x578B;&#x6A21;&#x5F0F;&#xFF08;Prototype Pattern&#xFF09;</li>
+</ol>
+<h4 id="&#x7ED3;&#x6784;&#x578B;&#x6A21;&#x5F0F;">&#x7ED3;&#x6784;&#x578B;&#x6A21;&#x5F0F;</h4>
+<p>&#x8FD9;&#x4E9B;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x5173;&#x6CE8;&#x7C7B;&#x548C;&#x5BF9;&#x8C61;&#x7684;&#x7EC4;&#x5408;&#x3002;&#x7EE7;&#x627F;&#x7684;&#x6982;&#x5FF5;&#x88AB;&#x7528;&#x6765;&#x7EC4;&#x5408;&#x63A5;&#x53E3;&#x548C;&#x5B9A;&#x4E49;&#x7EC4;&#x5408;&#x5BF9;&#x8C61;&#x83B7;&#x5F97;&#x65B0;&#x529F;&#x80FD;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
+<ol>
+<li>&#x9002;&#x914D;&#x5668;&#x6A21;&#x5F0F;&#xFF08;Adapter Pattern&#xFF09;</li>
+<li>&#x6865;&#x63A5;&#x6A21;&#x5F0F;&#xFF08;Bridge Pattern&#xFF09;</li>
+<li>&#x8FC7;&#x6EE4;&#x5668;&#x6A21;&#x5F0F;&#xFF08;Filter&#x3001;Criteria Pattern&#xFF09;</li>
+<li>&#x7EC4;&#x5408;&#x6A21;&#x5F0F;&#xFF08;Composite Pattern&#xFF09;</li>
+<li>&#x88C5;&#x9970;&#x5668;&#x6A21;&#x5F0F;&#xFF08;Decorator Pattern&#xFF09;</li>
+<li>&#x5916;&#x89C2;&#x6A21;&#x5F0F;&#xFF08;Facade Pattern&#xFF09;</li>
+<li>&#x4EAB;&#x5143;&#x6A21;&#x5F0F;&#xFF08;Flyweight Pattern&#xFF09;</li>
+<li>&#x4EE3;&#x7406;&#x6A21;&#x5F0F;&#xFF08;Proxy Pattern&#xFF09;</li>
+</ol>
+<h4 id="&#x884C;&#x4E3A;&#x578B;&#x6A21;&#x5F0F;">&#x884C;&#x4E3A;&#x578B;&#x6A21;&#x5F0F;</h4>
+<p>&#x8FD9;&#x4E9B;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7279;&#x522B;&#x5173;&#x6CE8;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x3002;</p>
+<ol>
+<li>&#x8D23;&#x4EFB;&#x94FE;&#x6A21;&#x5F0F;&#xFF08;Chain of Responsibility Pattern&#xFF09;</li>
+<li>&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#xFF08;Command Pattern&#xFF09;</li>
+<li>&#x89E3;&#x91CA;&#x5668;&#x6A21;&#x5F0F;&#xFF08;Interpreter Pattern&#xFF09;</li>
+<li>&#x8FED;&#x4EE3;&#x5668;&#x6A21;&#x5F0F;&#xFF08;Iterator Pattern&#xFF09;</li>
+<li>&#x4E2D;&#x4ECB;&#x8005;&#x6A21;&#x5F0F;&#xFF08;Mediator Pattern&#xFF09;</li>
+<li>&#x5907;&#x5FD8;&#x5F55;&#x6A21;&#x5F0F;&#xFF08;Memento Pattern&#xFF09;</li>
+<li>&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;&#xFF08;Observer Pattern&#xFF09;</li>
+<li>&#x72B6;&#x6001;&#x6A21;&#x5F0F;&#xFF08;State Pattern&#xFF09;</li>
+<li>&#x7A7A;&#x5BF9;&#x8C61;&#x6A21;&#x5F0F;&#xFF08;Null Object Pattern&#xFF09;</li>
+<li>&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#xFF08;Strategy Pattern&#xFF09;</li>
+<li>&#x6A21;&#x677F;&#x6A21;&#x5F0F;&#xFF08;Template Pattern&#xFF09;</li>
+<li>&#x8BBF;&#x95EE;&#x8005;&#x6A21;&#x5F0F;&#xFF08;Visitor Pattern&#xFF09;</li>
+</ol>
+<h4 id="j2ee-&#x6A21;&#x5F0F;">J2EE &#x6A21;&#x5F0F;</h4>
+<p>&#x8FD9;&#x4E9B;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7279;&#x522B;&#x5173;&#x6CE8;&#x8868;&#x793A;&#x5C42;&#x3002;&#x8FD9;&#x4E9B;&#x6A21;&#x5F0F;&#x662F;&#x7531; Sun Java Center &#x9274;&#x5B9A;&#x7684;&#x3002;</p>
+<ol>
+<li>MVC &#x6A21;&#x5F0F;&#xFF08;MVC Pattern&#xFF09;</li>
+<li>&#x4E1A;&#x52A1;&#x4EE3;&#x8868;&#x6A21;&#x5F0F;&#xFF08;Business Delegate Pattern&#xFF09;</li>
+<li>&#x7EC4;&#x5408;&#x5B9E;&#x4F53;&#x6A21;&#x5F0F;&#xFF08;Composite Entity Pattern&#xFF09;</li>
+<li>&#x6570;&#x636E;&#x8BBF;&#x95EE;&#x5BF9;&#x8C61;&#x6A21;&#x5F0F;&#xFF08;Data Access Object Pattern&#xFF09;</li>
+<li>&#x524D;&#x7AEF;&#x63A7;&#x5236;&#x5668;&#x6A21;&#x5F0F;&#xFF08;Front Controller Pattern&#xFF09;</li>
+<li>&#x62E6;&#x622A;&#x8FC7;&#x6EE4;&#x5668;&#x6A21;&#x5F0F;&#xFF08;Intercepting Filter Pattern&#xFF09;</li>
+<li>&#x670D;&#x52A1;&#x5B9A;&#x4F4D;&#x5668;&#x6A21;&#x5F0F;&#xFF08;Service Locator Pattern&#xFF09;</li>
+<li>&#x4F20;&#x8F93;&#x5BF9;&#x8C61;&#x6A21;&#x5F0F;&#xFF08;Transfer Object Pattern&#xFF09;</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 项目介绍">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="principle.html" class="navigation navigation-next " aria-label="Next page: 设计模式六大原则">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"设计模式介绍","level":"1.2","depth":1,"next":{"title":"设计模式六大原则","level":"1.3","depth":1,"path":"doc/principle.md","ref":"doc/principle.md","articles":[]},"previous":{"title":"项目介绍","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"doc/README.md","mtime":"2019-01-02T14:11:14.242Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-02T16:12:42.399Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
