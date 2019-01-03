@@ -1,9 +1,10 @@
 <?php
 
- class Circle {
+require_once "./Shape.php";
+
+ class Circle implements Shape {
     public function draw() {
-        echo "Inside Circle::draw() method.";
-        echo "<br />";
+        echo "Inside Circle::draw() method. \n";
     }
 }
 
