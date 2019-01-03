@@ -1,5 +1,5 @@
-package Creational.AbstractFactory;
+<?php
 
-public interface Shape {
-    void draw();
+interface Shape {
+   public function draw();
 }

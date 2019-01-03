@@ -1,8 +1,5 @@
-package Creational.AbstractFactory;
-
-public class Square implements Shape {
-    @Override
-    public void draw() {
-        System.out.println("Inside Square::draw() method.");
+class Square{
+    draw() {
+        console.log("Inside Square::draw() method.");
     }
 }

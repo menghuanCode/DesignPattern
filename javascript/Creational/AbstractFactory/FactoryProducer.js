@@ -1,12 +1,12 @@
-package Creational.AbstractFactory;
-
-public class FactoryProducer {
-    public static AbstractFactory getFactory(String choice) {
-        if(choice.equalsIgnoreCase("SHAPE")){
+class FactoryProducer {
+    static getFactory(choice) {
+        if(choice === "SHAPE"){
             return new ShapeFactory();
-        } else if(choice.equalsIgnoreCase("COLOR")){
+        } else if(choice === "COLOR"){
             return new ColorFactory();
         }
         return null;
     }
 }
+
+

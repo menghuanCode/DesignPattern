@@ -1,23 +1,28 @@
-package Creational.AbstractFactory;
+<?php
 
-public class ColorFactory extends AbstractFactory {
-    @Override
-    public Color getColor(String color) {
-        if(color == null){
+require_once "./AbstractFactory.php";
+require_once "./Red.php";
+require_once "./Green.php";
+require_once "./Blue.php";
+
+
+class ColorFactory extends AbstractFactory{
+
+    public function getColor($color) {
+        if($color == null){
             return null;
         }
-        if(color.equalsIgnoreCase("RED")){
+        if($color === "RED"){
             return new Red();
-        } else if(color.equalsIgnoreCase("GREEN")){
+        } else if($color == "GREEN"){
             return new Green();
-        } else if(color.equalsIgnoreCase("BLUE")){
+        } else if($color == "BLUE"){
             return new Blue();
         }
         return null;
     }
 
-    @Override
-    public Shape getShape(String shape) {
+    public function getShape($shape) {
         return null;
     }
 }

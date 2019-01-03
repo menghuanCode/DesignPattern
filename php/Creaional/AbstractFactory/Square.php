@@ -1,8 +1,7 @@
-package Creational.AbstractFactory;
+<?php
 
-public class Square implements Shape {
-    @Override
-    public void draw() {
-        System.out.println("Inside Square::draw() method.");
+class Square implements Shape {
+    public function draw() {
+        echo "Inside Square::draw() method. \n";
     }
 }

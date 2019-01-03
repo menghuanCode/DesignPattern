@@ -1,23 +1,17 @@
-package Creational.AbstractFactory;
+class ColorFactory extends AbstractFactory {
 
-public class ColorFactory extends AbstractFactory {
-    @Override
-    public Color getColor(String color) {
+    getColor(color) {
         if(color == null){
             return null;
         }
-        if(color.equalsIgnoreCase("RED")){
+        if( color === "RED"){
             return new Red();
-        } else if(color.equalsIgnoreCase("GREEN")){
+        } else if( color === "GREEN" ){
             return new Green();
-        } else if(color.equalsIgnoreCase("BLUE")){
+        } else if( color === "BLUE"){
             return new Blue();
         }
         return null;
     }
 
-    @Override
-    public Shape getShape(String shape) {
-        return null;
-    }
 }

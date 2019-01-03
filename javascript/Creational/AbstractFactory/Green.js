@@ -1,9 +1,5 @@
-package Creational.AbstractFactory;
-
-public class Green implements Color {
-
-    @Override
-    public void fill() {
-        System.out.println("Inside Green::fill() method.");
+class Green{
+    fill() {
+        console.log("Inside Green::fill() method.");
     }
 }

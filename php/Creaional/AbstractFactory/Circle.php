@@ -1,8 +1,7 @@
-package Creational.AbstractFactory;
+<?php
 
-public class Circle implements Shape {
-    @Override
-    public void draw() {
-        System.out.println("Inside Circle::draw() method.");
+class Circle implements Shape {
+    public function draw() {
+        echo "Inside Circle::draw() method. \n";
     }
 }

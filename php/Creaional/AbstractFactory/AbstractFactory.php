@@ -1,8 +1,8 @@
-package Creational.AbstractFactory;
+<?php
 
-public abstract class AbstractFactory {
-    public abstract Color getColor(String color);
-    public abstract Shape getShape(String shape);
+abstract class AbstractFactory {
+    abstract public function getColor($color);
+    abstract public function getShape($shape);
 }
 
 

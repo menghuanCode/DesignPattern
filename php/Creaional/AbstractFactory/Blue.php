@@ -1,9 +1,7 @@
-package Creational.AbstractFactory;
+<?php
 
-public class Blue implements Color {
-
-    @Override
-    public void fill() {
-        System.out.println("Inside Blue::fill() method.");
+class Blue implements Color {
+    public function fill() {
+        echo "Inside Blue::fill() method. \n";
     }
 }

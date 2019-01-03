@@ -1,21 +1,25 @@
-package Creational.AbstractFactory;
+<?php
 
-public class ShapeFactory extends AbstractFactory {
-    @Override
-    public Color getColor(String color) {
+require_once "./AbstractFactory.php";
+require_once "./Circle.php";
+require_once "./Rectangle.php";
+require_once "./Square.php";
+
+class ShapeFactory extends AbstractFactory {
+
+    public function getColor($color) {
         return null;
     }
 
-    @Override
-    public Shape getShape(String shapeType) {
-        if(shapeType == null){
+    public function getShape($shapeType) {
+        if($shapeType == null){
             return null;
         }
-        if(shapeType.equalsIgnoreCase("CIRCLE")){
+        if($shapeType == "CIRCLE"){
             return new Circle();
-        } else if(shapeType.equalsIgnoreCase("RECTANGLE")){
+        } else if($shapeType == "RECTANGLE"){
             return new Rectangle();
-        } else if(shapeType.equalsIgnoreCase("SQUARE")){
+        } else if($shapeType == "SQUARE"){
             return new Square();
         }
         return null;

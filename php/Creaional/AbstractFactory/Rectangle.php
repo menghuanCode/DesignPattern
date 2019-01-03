@@ -1,10 +1,7 @@
-package Creational.AbstractFactory;
+<?php
 
-
-public class Rectangle implements Shape {
-
-    @Override
-    public void draw() {
-        System.out.println("Inside Rectangle::draw() method.");
+class Rectangle implements Shape {
+    public function draw() {
+        echo "Inside Rectangle::draw() method. \n";
     }
 }
