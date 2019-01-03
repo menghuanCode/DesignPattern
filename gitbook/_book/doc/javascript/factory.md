@@ -86,4 +86,20 @@ square.draw();
 
 ```
 
+### 步骤 5
+页面调用
+```html
+//index.html
+
+<!--几何工厂-->
+<script src="ShapeFactory.js"></script>
+<!--产品-->
+<script src="Rectangle.js"></script>
+<script src="Square.js"></script>
+<script src="Circle.js"></script>
+<!--调用-->
+<script src="main.js"></script>
+
+```
+
 

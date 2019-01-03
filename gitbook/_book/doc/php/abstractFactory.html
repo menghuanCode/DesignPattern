@@ -159,9 +159,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../java/abstractFactory.html">
+        <li class="chapter " data-level="1.4.2" data-path="../java/AbstractFactory.html">
             
-                <a href="../java/abstractFactory.html">
+                <a href="../java/AbstractFactory.html">
             
                     
                     抽象工厂模式
@@ -607,9 +607,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../javascript/abstractFactory.html">
+        <li class="chapter " data-level="1.5.2" data-path="../javascript/AbstractFactory.html">
             
-                <a href="../javascript/abstractFactory.html">
+                <a href="../javascript/AbstractFactory.html">
             
                     
                     抽象工厂模式
@@ -1055,9 +1055,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6.2" data-path="abstractFactory.html">
+        <li class="chapter active" data-level="1.6.2" data-path="AbstractFactory.html">
             
-                <a href="abstractFactory.html">
+                <a href="AbstractFactory.html">
             
                     
                     抽象工厂模式
@@ -1522,6 +1522,198 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x62BD;&#x8C61;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;">&#x62BD;&#x8C61;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;</h1>
+<p>&#x62BD;&#x8C61;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;( Abstract Factory Pattern ) &#x662F;&#x56F4;&#x7ED5;&#x4E00;&#x4E2A;&#x8D85;&#x7EA7;&#x5DE5;&#x5382;&#x521B;&#x5EFA;&#x5176;&#x4ED6;&#x5DE5;&#x5382;&#x3002;&#x8BE5;&#x8D85;&#x7EA7;&#x5DE5;&#x5382;&#x53C8;&#x79F0;&#x4E3A;&#x5176;&#x4ED6;&#x5DE5;&#x5382;&#x7684;&#x5DE5;&#x5382;&#x3002;&#x8FD9;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x5C5E;&#x4E8E;&#x521B;&#x5EFA;&#x578B;&#x6A21;&#x5F0F;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x6700;&#x4F73;&#x65B9;&#x5F0F;&#x3002;</p>
+<p> &#x5728;&#x62BD;&#x8C61;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#x4E2D;&#xFF0C;&#x63A5;&#x53E3;&#x662F;&#x8D1F;&#x8D23;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x76F8;&#x5173;&#x5BF9;&#x8C61;&#x7684;&#x5DE5;&#x5382;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x663E;&#x793A;&#x6307;&#x5B9A;&#x4ED6;&#x4EEC;&#x7684;&#x7C7B;&#x3002;&#x6BCF;&#x4E2A;&#x751F;&#x4EA7;&#x7684;&#x5DE5;&#x5382;&#x90FD;&#x80FD;&#x6309;&#x7167;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#x63D0;&#x4F9B;&#x5BF9;&#x8C61;&#x3002;</p>
+<h2 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h2>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x521B;&#x5EFA; Shape &#x548C; Color &#x63A5;&#x53E3;&#x548C;&#x5B9E;&#x73B0;&#x8FD9;&#x4E9B;&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x3002;&#x4E0B;&#x4E00;&#x6B65;&#x521B;&#x5EFA;&#x62BD;&#x8C61;&#x5DE5;&#x5382;&#x7C7B; AbstractFactory&#x3002;&#x63A5;&#x7740;&#x5B9A;&#x4E49;&#x5DE5;&#x5382;&#x7C7B; ShapeFactory &#x548C; ColorFactory&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x5DE5;&#x5382;&#x7C7B;&#x90FD;&#x662F;&#x6269;&#x5C55;&#x4E86; AbstractFactory&#x3002;&#x7136;&#x540E;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5DE5;&#x5382;&#x521B;&#x9020;&#x5668;/&#x751F;&#x6210;&#x5668; FactoryProducer&#x3002;<br>Creational.AbstractFactory&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528; FactoryProducer &#x6765;&#x83B7;&#x53D6; AbstractFactory &#x5BF9;&#x8C61;&#x3002;&#x5B83;&#x5C06;&#x5411; AbstractFactory &#x4F20;&#x9012;&#x5F62;&#x72B6;&#x4FE1;&#x606F; Shape( CIRCLE / RECTANGLE / SQUARE )&#xFF0C;&#x4EE5;&#x4FBF;&#x83B7;&#x53D6;&#x5B83;&#x6240;&#x9700;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x540C;&#x65F6;&#x4ED6;&#x8FD8;&#x5411; AbstractFactory &#x4F20;&#x9012;&#x989C;&#x8272;&#x4FE1;&#x606F; Color( RED / GREEN / BLUE )&#xFF0C;&#x4EE5;&#x4FBF;&#x83B7;&#x53D6;&#x5B83;&#x6240;&#x9700;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<h3 id="&#x6B65;&#x9AA4;-1">&#x6B65;&#x9AA4; 1</h3>
+<p> &#x4E3A;&#x5F62;&#x72B6;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-comment">// Shape.php</span>
+<span class="hljs-class"><span class="hljs-keyword">Interface</span> <span class="hljs-title">Shape</span></span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+<h3 id="&#x6B65;&#x9AA4;-2">&#x6B65;&#x9AA4; 2</h3>
+<p>&#x521B;&#x5EFA;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-comment">// Rectangle.php</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Shape</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Inside Rectangle::draw() method. \n&quot;</span>;
+    }
+}
+
+<span class="hljs-comment">// Square.php</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Square</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Shape</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Inside Square::draw() method. \n&quot;</span>;
+    }
+}
+
+<span class="hljs-comment">// Circle.php</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Shape</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Inside Circle::draw() method. \n&quot;</span>;
+    }
+}
+</code></pre>
+<h3 id="&#x6B65;&#x9AA4;-3">&#x6B65;&#x9AA4; 3</h3>
+<p>&#x4E3A;&#x989C;&#x8272;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-comment">// Color.php</span>
+<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Color</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fill</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+<h3 id="&#x6B65;&#x9AA4;4">&#x6B65;&#x9AA4;4</h3>
+<p>&#x521B;&#x5EFA;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-comment">// Red.php</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Red</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Color</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fill</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Inside Red::fill() method. \n&quot;</span>;
+    }
+}
+
+<span class="hljs-comment">// Green.php</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Green</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Color</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fill</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Inside Green::fill() method. \n&quot;</span>;
+    }
+}
+
+<span class="hljs-comment">// Blue.php</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Blue</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Color</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fill</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Inside Blue::fill() method. \n&quot;</span>;
+    }
+}
+</code></pre>
+<h3 id="&#x6B65;&#x9AA4;-5">&#x6B65;&#x9AA4; 5</h3>
+<p>&#x521B;&#x5EFA;&#x62BD;&#x8C61;&#x7C7B;&#x6765;&#x83B7;&#x53D6;&#x4EA7;&#x54C1;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-comment">// AbstractFactory.php</span>
+<span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AbstractFactory</span> </span>{
+    <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getColor</span><span class="hljs-params">($color)</span></span>;
+    <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getShape</span><span class="hljs-params">($shape)</span></span>;
+}
+</code></pre>
+<h3 id="&#x6B65;&#x9AA4;-6">&#x6B65;&#x9AA4; 6</h3>
+<p>&#x521B;&#x5EFA; AbstractFactory &#x6269;&#x5C55;&#x7684;&#x5DE5;&#x5382;&#x7C7B;&#xFF0C;&#x57FA;&#x4E8E;&#x7ED9;&#x5B9A;&#x7684;&#x4FE1;&#x606F;&#x751F;&#x6210;&#x5B9E;&#x4F53;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-comment">// ShapeFactory.php</span>
+
+<span class="hljs-keyword">require_once</span> <span class="hljs-string">&quot;./AbstractFactory.php&quot;</span>;
+<span class="hljs-keyword">require_once</span> <span class="hljs-string">&quot;./Circle.php&quot;</span>;
+<span class="hljs-keyword">require_once</span> <span class="hljs-string">&quot;./Rectangle.php&quot;</span>;
+<span class="hljs-keyword">require_once</span> <span class="hljs-string">&quot;./Square.php&quot;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ShapeFactory</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AbstractFactory</span> </span>{
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getColor</span><span class="hljs-params">($color)</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getShape</span><span class="hljs-params">($shapeType)</span> </span>{
+        <span class="hljs-keyword">if</span>($shapeType == <span class="hljs-keyword">null</span>){
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        }
+        <span class="hljs-keyword">if</span>($shapeType == <span class="hljs-string">&quot;CIRCLE&quot;</span>){
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Circle();
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>($shapeType == <span class="hljs-string">&quot;RECTANGLE&quot;</span>){
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Rectangle();
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>($shapeType == <span class="hljs-string">&quot;SQUARE&quot;</span>){
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Square();
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+    }
+
+}
+
+<span class="hljs-comment">// ColorFactory.php</span>
+
+<span class="hljs-keyword">require_once</span> <span class="hljs-string">&quot;./AbstractFactory.php&quot;</span>;
+<span class="hljs-keyword">require_once</span> <span class="hljs-string">&quot;./Red.php&quot;</span>;
+<span class="hljs-keyword">require_once</span> <span class="hljs-string">&quot;./Green.php&quot;</span>;
+<span class="hljs-keyword">require_once</span> <span class="hljs-string">&quot;./Blue.php&quot;</span>;
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ColorFactory</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AbstractFactory</span></span>{
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getColor</span><span class="hljs-params">($color)</span> </span>{
+        <span class="hljs-keyword">if</span>($color == <span class="hljs-keyword">null</span>){
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        }
+        <span class="hljs-keyword">if</span>($color === <span class="hljs-string">&quot;RED&quot;</span>){
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Red();
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>($color == <span class="hljs-string">&quot;GREEN&quot;</span>){
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Green();
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>($color == <span class="hljs-string">&quot;BLUE&quot;</span>){
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Blue();
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getShape</span><span class="hljs-params">($shape)</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+    }
+}
+</code></pre>
+<h3 id="&#x6B65;&#x9AA4;-7">&#x6B65;&#x9AA4; 7</h3>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5DE5;&#x5382;&#x521B;&#x9020;&#x5668;/&#x751F;&#x6210;&#x5668;&#x7C7B;&#xFF0C;&#x901A;&#x8FC7;&#x4F20;&#x9012;&#x5F62;&#x72B6;&#x6216;&#x989C;&#x8272;&#x4FE1;&#x606F;&#x6765;&#x83B7;&#x53D6;&#x5DE5;&#x5382;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-comment">// FactoryProducer.php</span>
+
+<span class="hljs-keyword">require_once</span> <span class="hljs-string">&quot;./ShapeFactory.php&quot;</span>;
+<span class="hljs-keyword">require_once</span> <span class="hljs-string">&quot;./ColorFactory.php&quot;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FactoryProducer</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getFactory</span><span class="hljs-params">($choice)</span> </span>{
+        <span class="hljs-keyword">if</span>($choice == <span class="hljs-string">&quot;SHAPE&quot;</span>){
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ShapeFactory();
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>($choice ==<span class="hljs-string">&quot;COLOR&quot;</span>){
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ColorFactory();
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+    }
+}
+</code></pre>
+<h3 id="&#x6B65;&#x9AA4;-8">&#x6B65;&#x9AA4; 8</h3>
+<p>&#x4F7F;&#x7528; FactoryProducer &#x6765;&#x83B7;&#x53D6;&#x5DE5;&#x5382;&#x7C7B;&#xFF0C;&#x901A;&#x8FC7;&#x4F20;&#x9012;&#x7C7B;&#x578B;&#x4FE1;&#x606F;&#x6765;&#x83B7;&#x53D6;&#x5B9E;&#x4F53;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-comment">// main.php</span>
+
+<span class="hljs-keyword">require_once</span> <span class="hljs-string">&quot;./Shape.php&quot;</span>;
+<span class="hljs-keyword">require_once</span> <span class="hljs-string">&quot;./Color.php&quot;</span>;
+<span class="hljs-keyword">require_once</span> <span class="hljs-string">&quot;./FactoryProducer.php&quot;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">// &#x83B7;&#x53D6;&#x5F62;&#x72B6;&#x5DE5;&#x5382;</span>
+        $shapeFactory = FactoryProducer::getFactory(<span class="hljs-string">&quot;SHAPE&quot;</span>);
+        <span class="hljs-comment">// &#x83B7;&#x53D6;&#x5F62;&#x72B6;&#x4E3A; Circle &#x7684;&#x5BF9;&#x8C61;</span>
+        $circle = $shapeFactory-&gt;getShape(<span class="hljs-string">&quot;CIRCLE&quot;</span>);
+        <span class="hljs-comment">// &#x8C03;&#x7528; Circle &#x7684; draw &#x65B9;&#x6CD5;</span>
+        $circle-&gt;draw();
+        <span class="hljs-comment">//&#x83B7;&#x53D6;&#x5F62;&#x72B6;&#x4E3A; Square &#x7684;&#x5BF9;&#x8C61;</span>
+        $square = $shapeFactory-&gt;getShape(<span class="hljs-string">&quot;SQUARE&quot;</span>);
+        <span class="hljs-comment">//&#x8C03;&#x7528; Square &#x7684; draw &#x65B9;&#x6CD5;</span>
+        $square-&gt;draw();
+
+        <span class="hljs-comment">//&#x83B7;&#x53D6;&#x989C;&#x8272;&#x5DE5;&#x5382;</span>
+        $fillFactory = FactoryProducer::getFactory(<span class="hljs-string">&quot;COLOR&quot;</span>);
+        <span class="hljs-comment">//&#x83B7;&#x53D6;&#x989C;&#x8272;&#x4E3A; Red &#x7684;&#x5BF9;&#x8C61;</span>
+        $red = $fillFactory-&gt;getColor(<span class="hljs-string">&quot;RED&quot;</span>);
+        <span class="hljs-comment">//&#x8C03;&#x7528; Red &#x7684; fill &#x65B9;&#x6CD5;</span>
+        $red-&gt;fill();
+        <span class="hljs-comment">//&#x83B7;&#x53D6;&#x989C;&#x8272;&#x4E3A; Green &#x7684;&#x5BF9;&#x8C61;</span>
+        $green = $fillFactory-&gt;getColor(<span class="hljs-string">&quot;GREEN&quot;</span>);
+        <span class="hljs-comment">//&#x8C03;&#x7528; Green &#x7684; fill &#x65B9;&#x6CD5;</span>
+        $green-&gt;fill();
+        <span class="hljs-comment">//&#x83B7;&#x53D6;&#x989C;&#x8272;&#x4E3A; Blue &#x7684;&#x5BF9;&#x8C61;</span>
+        $blue = $fillFactory-&gt;getColor(<span class="hljs-string">&quot;BLUE&quot;</span>);
+        <span class="hljs-comment">//&#x8C03;&#x7528; Blue &#x7684; fill &#x65B9;&#x6CD5;</span>
+        $blue-&gt;fill();
+    }
+
+}
+
+$main = <span class="hljs-keyword">new</span> Main();
+</code></pre>
 
                                 
                                 </section>
@@ -1565,7 +1757,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"抽象工厂模式","level":"1.6.2","depth":2,"next":{"title":"单例模式","level":"1.6.3","depth":2,"path":"doc/php/singleton.md","ref":"doc/php/singleton.md","articles":[]},"previous":{"title":"工厂模式","level":"1.6.1","depth":2,"path":"doc/php/Factory.md","ref":"doc/php/Factory.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"doc/php/abstractFactory.md","mtime":"2019-01-03T01:14:01.802Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-03T03:01:45.166Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"抽象工厂模式","level":"1.6.2","depth":2,"next":{"title":"单例模式","level":"1.6.3","depth":2,"path":"doc/php/singleton.md","ref":"doc/php/singleton.md","articles":[]},"previous":{"title":"工厂模式","level":"1.6.1","depth":2,"path":"doc/php/Factory.md","ref":"doc/php/Factory.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"doc/php/AbstractFactory.md","mtime":"2019-01-03T08:50:53.503Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-03T08:51:29.965Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

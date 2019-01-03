@@ -5,7 +5,7 @@
 * [设计模式六大原则](doc/principle.md)
 * java 实现
     * [工厂模式](doc/java/Factory.md)
-    * [抽象工厂模式](doc/java/abstractFactory.md)
+    * [抽象工厂模式](doc/java/AbstractFactory.md)
     * [单例模式](doc/java/singleton.md)
     * [建造者模式](doc/java/Builder.md)
     * [原型模式](doc/java/Prototype.md)
@@ -39,7 +39,7 @@
     * [传输对象模式](doc/java/TransferObject.md)
 * javascript 实现
     * [工厂模式](doc/javascript/Factory.md)
-    * [抽象工厂模式](doc/javascript/abstractFactory.md)
+    * [抽象工厂模式](doc/javascript/AbstractFactory.md)
     * [单例模式](doc/javascript/singleton.md)
     * [建造者模式](doc/javascript/Builder.md)
     * [原型模式](doc/javascript/Prototype.md)
@@ -73,7 +73,7 @@
     * [传输对象模式](doc/javascript/TransferObject.md)
 * php 实现
     * [工厂模式](doc/php/Factory.md)
-    * [抽象工厂模式](doc/php/abstractFactory.md)
+    * [抽象工厂模式](doc/php/AbstractFactory.md)
     * [单例模式](doc/php/singleton.md)
     * [建造者模式](doc/php/Builder.md)
     * [原型模式](doc/php/Prototype.md)
