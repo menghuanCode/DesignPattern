@@ -12,9 +12,7 @@ let _hmt = {
     }
 }
 
-
 _hmt.push(['_trackEvent', 'web', 'page_enter', 'position', 'index.html']);
-
 
 
 //  2. 参数的适配
@@ -42,4 +40,13 @@ class SDK {
         // 参数适配
 
     }
+}
+
+function pay({
+    price,
+    goodsId
+}) {
+    return new Promise((resolve, reject) => {
+        const config = {};
+    })
 }
