@@ -40,13 +40,13 @@ const orderCommon = function (orderType, pay, stock) {
 Function.prototype.after = function (fn) {
     let self = this;
     return function () {
-        let result = self.apply(this, arguments);
+        let result = self.apply(self, arguments);
         if (result === 'next') {
-            return fn.apply(self, arguments);
+            return fn.apply(this, arguments)
         }
     }
 }
 
 
 const order = order500.after(order200).after(orderCommon);
-order( 3, true, 500 ) // 普通购买, 无优惠券
+order( 5, true, 500 ) // 普通购买, 无优惠券
